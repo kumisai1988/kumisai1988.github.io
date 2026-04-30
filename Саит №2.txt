@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEAM в инклюзивной школе</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-color);
+        }
+
+        nav {
+            background: #fff;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--white);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+        }
+
+        .steam-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .steam-card {
+            background: var(--accent-color);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #f8f9fa;
+            color: var(--primary-color);
+        }
+
+        .condition-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .condition-list li {
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .condition-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary-color);
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>STEAM-подход в инклюзивном образовании</h1>
+    <p>Педагогические условия реализации для учащихся с ООП</p>
+</header>
+
+<nav>
+    <a href="#about">О проекте</a>
+    <a href="#conditions">Условия</a>
+    <a href="#curriculum">Программа</a>
+    <a href="#resources">Ресурсы</a>
+</nav>
+
+<div class="container">
+    
+    <section id="about">
+        <h2>О подходе</h2>
+        <p>STEAM (Science, Technology, Engineering, Arts, Math) в инклюзии — это не просто набор дисциплин, а способ адаптации окружающего мира под нужды каждого ребенка через творчество и технологии.</p>
+        
+        <div class="steam-grid">
+            <div class="steam-card">S — Наука</div>
+            <div class="steam-card">T — Технологии</div>
+            <div class="steam-card">E — Инженерия</div>
+            <div class="steam-card">A — Искусство</div>
+            <div class="steam-card">M — Математика</div>
+        </div>
+    </section>
+
+    
+
+    <section id="conditions">
+        <h2>Педагогические условия</h2>
+        <ul class="condition-list">
+            <li><strong>Адаптивная среда:</strong> Наличие сенсорных зон и специализированного ПО.</li>
+            <li><strong>Индивидуализация:</strong> Гибкие учебные планы, учитывающие психофизические особенности.</li>
+            <li><strong>Ассистивные технологии:</strong> Использование робототехники и VR для компенсации ограничений.</li>
+            <li><strong>Тьюторское сопровождение:</strong> Поддержка специалистов на всех этапах STEAM-проектов.</li>
+        </ul>
+    </section>
+
+    <section id="curriculum">
+        <h2>Учебный план (Пример модулей)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Модуль</th>
+                    <th>Тема занятия</th>
+                    <th>Инструменты</th>
+                    <th>Адаптация для ООП</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. Инженерия</td>
+                    <td>Простые механизмы</td>
+                    <td>LEGO Education</td>
+                    <td>Крупные детали, визуальные схемы</td>
+                </tr>
+                <tr>
+                    <td>2. Технологии</td>
+                    <td>Основы визуального кода</td>
+                    <td>Scratch Junior</td>
+                    <td>Звуковые подсказки, упрощенный интерфейс</td>
+                </tr>
+                <tr>
+                    <td>3. Искусство</td>
+                    <td>3D-моделирование</td>
+                    <td>Tinkercad / 3D-ручки</td>
+                    <td>Работа с тактильными моделями</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="resources">
+        <h2>Полезные ресурсы</h2>
+        <p>Здесь вы можете найти методические рекомендации и ссылки на программное обеспечение для работы в инклюзивном классе.</p>
+        <ul>
+            <li><a href="#">Методичка по инклюзивному STEAM (PDF)</a></li>
+            <li><a href="#">Обзор ассистивного оборудования</a></li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Педагогический проект — Инклюзивная школа будушего</p>
+</footer>
+
+</body>
+</html>
